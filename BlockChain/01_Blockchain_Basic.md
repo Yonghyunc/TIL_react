@@ -10,7 +10,7 @@
 
 ---
 
-# 1) 블록체인 분류
+## 1) 블록체인 분류
 
 ### 1️⃣ 퍼블릭 (public)     
 ▫ 누구나 네트워크에 참여    
@@ -60,7 +60,7 @@
 
 ---
 
-# 2) Ropsten 실습 환경 준비
+## 2) Ropsten 실습 환경 준비
 1. MetaMask 설치
 2. 계정 생성
 3. 네트워크 연결
@@ -113,9 +113,9 @@ faucet 요청 ➡ [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/)
 
 ---
 
-# Ropsten 테스트넷 실습
+## Ropsten 테스트넷 실습
 
-## 1️⃣ MetaMask에서 트랜잭션 보내기
+### 1️⃣ MetaMask에서 트랜잭션 보내기
 1. 받을 계정 준비
 2. send 클릭
 3. confirm 후 트랜잭션 생성 확인
@@ -123,7 +123,7 @@ faucet 요청 ➡ [Sepolia PoW Faucet](https://sepolia-faucet.pk910.de/)
 가스 : 수수료 개념  
 가스비 조정 가능 (이더리움 관리자가 비싼 것부터 처리)
 
-## 2️⃣ MetaMask Provider 이용하기
+### 2️⃣ MetaMask Provider 이용하기
 ▫ **프로바이더**란?     
 클라이언트를 통해 이더리움 네트워크에 접근할 수 있도록 제공된 Javascript 객체  
 
@@ -159,7 +159,14 @@ Ether : 이러리움에서 사용하는 암호화폐
 Wei : 이더의 가장 작은 단위     
 웨이는 기본적으로 인식할 수 없을 정도의 작은 디지털 단위로서, 기술적인 경우나 코드 작성에만 사용됨      
 
-▫ RPC API 요청      
+▫ RPC API 요청     
+``` js
+ethereum.request({
+    method: 'eth_getBalance',
+    params: ["지갑아이디"]
+}).then(result => console.log(result))
+```
+
 
 <br>
 
